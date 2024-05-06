@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/Schedule.css') }}">
+    <title>Schedule</title>
+</head>
+<body>
+    <div class="container">
+            <h2>My Schedule</h2>
+            <div class="content">
+                <div class="label-box">
+                    <ul>
+                        {% for i in shifts %}
+                        <li>{{i}}</li>
+               
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+            <div class="alert">
+                <p>My Schedule for this Week. This can have Temporary Added/Dropped Shifts.</p>
+            </div>
+       
+            <div class="button-container">
+                <button onclick="goBack()">Back</button>
+            </div>
+    </div>
+    <script>
+        function goBack() {
+            // Use the history object to go back one step
+            window.history.back();
+        }
+    </script>
+</body>
+</html>

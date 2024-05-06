@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/AdminViewShifts.css') }}">
+    <title>Admin View Shifts</title>
+</head>
+<body>
+    
+    <div id="SideNav">
+        <nav>
+            <ul>
+                <h1></h1>
+                <li><a href="http://127.0.0.1:5000/admin">Admin Dashboard</a></li>
+                <li><a href="AdminViewShifts.html">Employee Shifts</a></li>
+            </ul>
+        </nav>
+    </div>
+    <section class="main">
+      <div class="main-top">
+        <h1>All Employee Shifts</h1>
+      </div>
+
+      <div class="users">
+        <ul>
+          <form method="POST">
+          {% for i in names_list %}
+        <div class="card">
+          <button type="submit" name="{{i}}">{{names_list[i]}}</button>
+        </div>
+        {% endfor %}
+      </form>
+ 
+    </ul>
+    </div>
+
+
+  </section>
+  <script>
+    function redirectToExample() {
+        // Use Flask's url_for function to get the URL for the 'example_route'
+        var url = "{{ url_for('admin_home') }}";
+
+        // Redirect to the specified URL
+        window.location.href = url;
+    }
+</script>
+</body>
+</html>

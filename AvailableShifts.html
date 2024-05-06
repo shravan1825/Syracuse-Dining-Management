@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/AvailableShifts.css') }}">
+    <title>Available Shifts</title>
+</head>
+<body>
+    <div class="container">
+            <h2>Available Schedule</h2>
+            <div class="content">
+                <div class="label-box">
+                    <ul>
+                        {% for r in subs %}
+                        <li>{{r[-1]}}</li>
+               
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+            <div class="alert">
+                <p>These Shifts are Available Temporarily. Please fill out the details accurately to Add or Drop a Shift.</p>
+            </div>
+       
+            <div class="button-container">
+                <button onclick="goBack()">Back</button>
+            </div>
+    </div>
+    <script>
+        function goBack() {
+            // Use the history object to go back one step
+            window.history.back();
+        }
+    </script>
+</body>
+</html>

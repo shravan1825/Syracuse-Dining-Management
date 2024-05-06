@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/MyDetails.css') }}">
+    <title>My Details</title>
+</head>
+<body>
+    <div class="container">
+        <form action="" method="post">
+            <h2>My Information</h2>
+            <div class="content">
+                <div class="label-box">
+                    <ul>
+                        <li>Full Name : {{ emp_name }}</li>
+                        <li>Email : {{ emp_email }}</li>
+                        <li>Contact: {{ emp_contact }}</li>
+                        <li>Student ID: {{ emp_student_id }}</li>
+                        <li>Disciplinary Points: {{ emp_points }}</li>       
+                    </ul>
+                </div>
+            </div>
+            <div class="alert">
+                <p>This Information can be changed only by the Admin. Please Email Regarding any Changes.</p>
+            </div>
+
+        </form>
+        <div class="button-container">
+            <button onclick="goBack()">Back</button>
+        </div>
+    </div>
+    <script>
+        function goBack() {
+            // Use the history object to go back one step
+            window.history.back();
+        }
+    </script>
+</body>
+</html>

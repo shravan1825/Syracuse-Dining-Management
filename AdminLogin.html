@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/Admin-Employee-Login.css') }}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Admin Login</title>
+</head>
+<body>
+    <div class="Box">
+        <div class="Container">
+            <div class="TopHeader">
+                <span>Have an Account?</span>
+                <Header>Admin Login</Header>
+            </div>
+
+
+      
+            <form action="" method="post">
+            <div class="InputField">
+                <input type="text" class="input" placeholder="Username" id="username" name="user_name" required>
+                <i class="fa fa-user" aria-hidden="true"></i>
+            </div>
+            <div class="InputField">
+                <input type="password" class="input" placeholder="Password"  id="password" name="password" required>
+                <i class="fa fa-lock" aria-hidden="true"></i>
+            </div>
+            <div class="InputField">
+                <button type="submit" class="submit" value="Login">Login</button>
+            </div>
+        </form>
+        </div>
+    </div>  
+</body>
+</html>

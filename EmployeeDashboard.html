@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/EmployeeDashboard.css') }}">
+    <title>Employee Dashboard</title>
+</head>
+<body>
+    <section id="employee">
+        <div class="title-text">
+            <p>Employee Dashboard</p>
+        </div>
+        <div class="options-box">
+            <form action="" method="post">
+            <div class="options"> 
+                <button type="submit" name="my_details" value="my_details">My Details</button>
+            </div>
+            <div class="options">
+                <button type="submit" name="my_schedule" value="my_schedule">My Schedule</button>
+              </div> 
+              <div class="options">  
+                  <button type="submit" name="available_shifts" value="available_shifts">Available Shift</button>
+              </div>
+              <div class="options">
+                  <button type="submit" name="add_drop_shift" value="add_drop_shift">Add - Drop Shift</button>
+              </div>
+            </form>
+        </div>
+    </section>
+</body>
+</html>

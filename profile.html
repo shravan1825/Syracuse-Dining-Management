@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/profile.css') }}">
+    <title>Profile</title>
+</head>
+<body>
+    <div class="container">
+        <form action="" method="post">
+            <h2>Student Information</h2>
+            <div class="content">
+                <div class="label-box">
+                    <ul> 
+                        <li>Full Name : {{emp_inf[0]}}</li>
+                        <li>Email : {{emp_inf[1]}}</li>
+                        <li>Contact: {{emp_inf[2]}}</li>
+                        <li>Student ID: {{emp_inf[3]}}</li>       
+                    </ul>
+                </div>
+            <forms method="POST">
+                <div class="input-points">
+                    <ul><li>Disciplinary Points: {{emp_inf[4]}}</li></ul>
+                    <input type="text" placeholder="Type Points" name="points" maxlength="1" oninput="this.value=this.value.replace(/[^0-9]/g,'');">
+                </div>
+            </ul>
+            </div>
+            <div class="alert">
+                <p>By clicking Save, you agree to change the disiplinary points of this student.</p>
+            </div>
+            <div class="button-container">
+
+                <button type="submit" name="{{emp_inf[3]}}">Save</button>
+            </div>
+        </form>
+        </form>
+    </div>
+</body>
+</html>
