@@ -5,7 +5,7 @@
 }
 
 body{
-    background: linear-gradient(rgba(0,0,0,0.5), #009688), url(Images/20.jpg);
+    background: linear-gradient(rgba(0,0,0,0.5), #a25906), url(Images/20.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -97,7 +97,7 @@ i{
     flex-direction: row;
     justify-content: space-between;
     font-size: small;
-    color: #009688;
+    color: #a25906;
     margin-top: 10px;
 }
 
