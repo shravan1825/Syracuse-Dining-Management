@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+}
+
+body{
+    background: linear-gradient(rgba(0,0,0,0.5), #009688);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    
+}
+
+
+#SideNav{
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    background: linear-gradient(rgba(0,0,0,0.5), #009688);
+    z-index: 2;
+}
+
+
+nav ul li{
+    list-style: none;
+    margin: 50px 45px;
+    font-size: 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.logo{
+    width: 200px;
+    position: absolute;
+    top: 4%;
+    left: 10%;
+}
+
+#SideNav h1{
+    padding-top: 90px;
+}
+
+
+.main{
+    padding-left: 18%;
+    padding-top: 3%;
+    width: 100%;
+    font-size: 25px;
+    color: #fff;
+}
+
+.main .main-top h1{
+    padding-left: 55px;
+}
+
+.main .users{
+    display: flex;
+    width: 100%;
+  }
+
+  .users .card{
+    width: 90%;
+    margin: 100px;
+    border-radius: 10px;
+    padding: 10px;
+    background: linear-gradient(rgba(0,0,0,0.5), #009688);
+    box-shadow: 0 15px 20px rgba(0,0,0,0.6);
+  }
+
+  .users .card h4{
+    text-transform: uppercase;
+    color: #fff;
+    margin-top: 1%;
+    margin-left: 1%;
+  }
+
+  .users .card button{
+    width: 30%;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    margin-left: 1%;
+    padding: 7px;
+    cursor: pointer;
+    border-radius: 10px;
+    background: transparent;
+    border: 1px solid #009688;
+    font-size: 20px;
+  }
+  .users .card button:hover{
+    background: #fff;
+    color: #fff;
+    transition: 0.5s;
+  }
+
+  .users .card button{
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .users .card button:hover{
+    color: #009688;
+    text-decoration: none;
+  }
+
+  
