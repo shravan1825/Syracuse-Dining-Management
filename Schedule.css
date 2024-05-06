@@ -10,7 +10,7 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: linear-gradient(rgba(0,0,0,0.5), #009688);
+    background: linear-gradient(rgba(0,0,0,0.5), #a25906);
 }
 
 .container{
@@ -19,7 +19,7 @@ body{
     margin: 0 28px;
     border-radius: 10px;
     overflow: hidden;
-    background: linear-gradient(rgba(0,0,0,0.5), #009688);
+    background: linear-gradient(rgba(0,0,0,0.5), #a25906);
     box-shadow: 0 15px 20px rgba(0,0,0,0.6);
 }
 
@@ -75,7 +75,7 @@ h2{
     color: #000;
     border: none;
     border-radius: 5px;
-    background-image: linear-gradient(to right, #fff, #037e7e);
+    background-image: linear-gradient(to right, #fff, #a25906);
     cursor: pointer;
     transition: 0.3s;
     text-decoration: none;
@@ -83,5 +83,5 @@ h2{
 }
 
 .button-container button:hover{
-    background-image: linear-gradient(to right, #037e7e, #fff);
+    background-image: linear-gradient(to right, #a25906, #fff);
 }
